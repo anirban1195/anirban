@@ -117,6 +117,7 @@ plt.xlabel('% Marks in Subjective Exam 1')
 plt.ylabel('% Marks in Subjective Exam 2')
 plt.title('Subjective Exam 1 vs Exam 2')
 plt.show()
+{% endhighlight %}
 
 ![Course 2 HG vs HG]({{site.url}}{{site.baseurl}}/images/gradebook/course2_subjectiveVssubjective.png)
 
