@@ -89,6 +89,7 @@ and here are the plots
 ![Course2 Histogram]({{site.url}}{{site.baseurl}}/images/gradebook/course2_plots.png)
 
 Plots for this course is not much skewed given this course is a higher level course than the first one. The most stark difference is in the exam plots where we clearly see some sort of normal distribution. The exams for this course had a subjective part and a multiple choice part. Plotting the two separately shows the most stark contrast.
+
 {% highlight python %}
 subjective = df['Exam 1 HG [Total Pts: 30 Score] |4531308'].astype(float) + df['Exam 2 HG [Total Pts: 30 Score] |4681344'].astype(float)
 multipleChoice = df['Exam 1 MC [Total Pts: 70 Score] |4531196'].astype(float) + df['Exam 2 MC [Total Pts: 70 Score] |4681340'].astype(float)
