@@ -106,7 +106,16 @@ plt.show()
 ![Course 2 MC vs HG]({{site.url}}{{site.baseurl}}/images/gradebook/course2_subjectiveVsMc.png)
 
 The gaps in the Multiple Choice part is due to discreet possible grades. The hand graded portion looks much more similar to  a normal distribution. The overall trend is still same as the first course. The underlying theme of all the plots seems to be a slow rise and then quicker falloff. We will get into the distribution in the second post. 
-Lastly I wanted to see if there was correlation between exam scores. Each of the courses had multiple exam and I would normally expect to see quite bit of correlation between the scores. I will plot the Subjective parts only since it is continuous, unlike the Multiple choice part which is discreet, and also more normal. 
+Lastly I wanted to see if there was correlation between exam scores. Each of the courses had multiple exam and I would normally expect to see quite bit of correlation between the scores. I will plot the subjective parts only since they are naturally more normal. For correlation, I could do Pearson/Spearman correlation coefficient for a quantitative estimate, but it would probably not make much sense unless someone is very familar with statistics. So I use a plot which is more intuitive, with darker colors showing more data points. Also I rounded the subjective score to nearest ten again for visualization purposes. With significantly more data points we could probably skip this rounding step.
+
+{% highlight python %}
+subjective1 = df['Exam 1 HG [Total Pts: 30 Score] |4531308'].astype(float)/30.0
+subjective2 = df['Exam 2 HG [Total Pts: 30 Score] |4681344'].astype(float)/30.0
+plt.plot(np.round(subjective1, 1), np.round(subjective2, 1), 'b.',markersize= 10, alpha=0.05)
+plt.xlabel('% Marks in Subjective Exam 1')
+plt.ylabel('% Marks in Subjective Exam 2')
+plt.title('Subjective Exam 1 vs Exam 2')
+plt.show()
 
 ![Course 2 HG vs HG]({{site.url}}{{site.baseurl}}/images/gradebook/course2_subjectiveVssubjective.png)
 
