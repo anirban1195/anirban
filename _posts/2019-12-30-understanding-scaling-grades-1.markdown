@@ -22,7 +22,7 @@ plt.show()
 {% endhighlight %}
 
 These scores are already curved. This is what the histogram looks like. 
-![Normalized Score Histogram](/images/gradebook/norm_cum_sc.png)
+![Normalized Score Histogram]({{site.url}}{{site.baseurl}}/images/gradebook/norm_cum_sc.png)
 Hmm... that does not look like a Gaussian at all. Maybe, because the scores are already normalized, we get such a skewed distribution. Lets then look at the raw totals from labs, recitation and exams. 
 {% highlight python %}
 labAvg = df['LAB-Avg [Total Pts: up to 20 Percentage] |4332915'].astype(float)/100.0
@@ -39,11 +39,11 @@ plt.ylabel('# of students')
 plt.show()
 {% endhighlight %}
 We get 
-![Raw Score Histogram](/images/gradebook/cum_sc.png)
+![Raw Score Histogram]({{site.url}}{{site.baseurl}}/images/gradebook/cum_sc.png)
 That looks even worse (I guess good or bad depends on your point of view. A student should be very thrilled with this). With a raw score distribution like this, there is no obvious way of saying who put more effort in the course. Also it is a nightmare to normalize curves like this.
 
 However, this distribution should not come as a surprise. The labs and recitations gave full points to a student just for being present. Hence almost everyone got 100% for those. So, my guess is that HWs and Exams should show a more Normal distribution. The plots we get are 
-![Exam and HW Histogram](/images/gradebook/exam_hw_raw.png)
+![Exam and HW Histogram]({{site.url}}{{site.baseurl}}/images/gradebook/exam_hw_raw.png)
 The exam distribution is kind of better. For HW again looks almost like a flipped Poisson Distribution. If you dont know about [Poisson Distribution I would highly encourage you to read about it](https://en.wikipedia.org/wiki/Poisson_distribution). I like to think of the flipped Poisson curve this way. Say we had a God who was handing out free answers. Everyone would want that. But people are lazy and sometimes other things can come in the way. So lets say the probability that a student gets answer for a particular HW problem wrong is about 2% or 0.02. So on average the students gets 98% problems correct. Only a few gets a significant number of problems wrong. 
 
 
@@ -80,7 +80,7 @@ plt.ylabel('# of students')
 plt.title('Exam Total Score')
 {% endhighlight %}
 and here are the plots 
-![Course2 Histogram](/images/gradebook/course2_plots.png)
+![Course2 Histogram]({{site.url}}{{site.baseurl}}/images/gradebook/course2_plots.png)
 
 Plots for this course is not much skewed given this course is a higher level course than the first one. The most stark difference is in the exam plots where we clearly see some sort of normal distribution. The exams for this course had a subjective part and a multiple choice part. Plotting the two seperately shows the most stark contrast.
 {% highlight python %}
@@ -97,12 +97,12 @@ plt.title('Subjective vs Multiple Choice Score')
 plt.show()
 {% endhighlight %}
 
-![Course 2 MC vs HG](/images/gradebook/course2_subjectiveVsMc.png)
+![Course 2 MC vs HG]({{site.url}}{{site.baseurl}}/images/gradebook/course2_subjectiveVsMc.png)
 
 The gaps in the Multiple Choice part is due to discreet possible grades. The hand graded portion looks much more similar to the distribution I had in mind before I started this post. The overall trend is still same as the first course. The underlting theme of all the plots seems to be a slow rise and then quicker falloff. We will get into the distrubtion in the second post. 
 Lastly I wanted to see if there was correlation between exam scores. Each of the courses had multiple exam and I would normally expect to see quite bit of correlation between the scores. I will plot the Subjective parts only since it is continious, unlike the Multiple choice part which is discreet, and also more normal. 
 
-![Course 2 HG vs HG](/images/gradebook/course2_subjectiveVssubjective.png)
+![Course 2 HG vs HG]({{site.url}}{{site.baseurl}}/images/gradebook/course2_subjectiveVssubjective.png)
 
 This was a bit disappointing for me since the correlation is not very strong. But that is probably because the curves for the two subjective parts are significantly different. But on the bright side, the students performed clearly better in the second exam (since I remember both of the subjective parts being more or less of the same level)
 
