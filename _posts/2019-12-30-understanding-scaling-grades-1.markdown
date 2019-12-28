@@ -10,7 +10,7 @@ Lets look at the final grades for a course. I will use panadas and matplotlib fo
 {% highlight python %}
 import pandas as pd
 import matplotlib.pyplot as plt
-df = pd.read_csv('/home/anirban/Projects/gradebook/172_fall.csv') 
+df = pd.read_csv('/home/anirban/Projects/gradebook/course1_fall.csv') 
 grades=df['COURSE TOT [Total Pts: up to 2,000 Score] |4336090'].str.replace(',', '').astype(float)
 #Scale grades
 grades=grades/2000.0
@@ -48,8 +48,9 @@ The exam distribution is kind of better. For HW again looks almost like a flippe
 
 
 While this is somewhat good approximation, the original distribution has a much longer tail. So our model is not as good. I will try to make a follow up post on this. At this point however I was curious to see if these skewed distributions are just peculiar to this course or a general characteristic. Fortunately I have dataset for another course.
-Hmm... that does not look like a Gaussian at all. Maybe because the scores are already normalized we get such a skewed distribution. Lets then look at the raw totals from labs, recitation and exams. 
+Hmm... that does not look like a Gaussian at all. Maybe because the scores are already normalized we get such a skewed distribution. Lets then look at the raw totals from labs, recitation and exams. As usual first step is to read the data and normalize everthing to 1. 
 {% highlight python %}
+df = pd.read_csv('/home/anirban/Projects/gradebook/course2_fall.csv') 
 a = df['Weighted Total [Total Pts: up to 179.7 Percentage] |4388776']/100.0
 labAvg = df['Total Lab [Total Pts: up to 130 Score] |4712224'].astype(float)/130.0
 recAvg = df['Total Rec [Total Pts: up to 130 Score] |4712221'].astype(float)/130.0
@@ -58,6 +59,11 @@ hwAvg = df['Total HW [Total Pts: up to 254 Score] |4712216'].astype(float)/254.0
 examAvg = df['Total Evening Exams [Total Pts: up to 200 Score] |4712229'].astype(float)/200.0
 #Scale the total
 total = (labAvg+recAvg+lecAvg+hwAvg+quizAvg+examAvg)/5.0
+{% endhighlight %}
+
+Next we plot all the relevant histograms
+
+{% highlight python %}
 plt.subplot(221)
 n, bins, patches = plt.hist(a ,bins=100, facecolor='blue', alpha=0.5)
 plt.xlabel('% Marks')
