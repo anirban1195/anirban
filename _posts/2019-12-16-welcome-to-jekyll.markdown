@@ -7,7 +7,7 @@ categories: jekyll update
 UVIT is an Ultra Violet telescope on board ASTROSAT. It stands for Ultra Violet Imaging Telescope and is made up of 3 separate telescopes. Here I will mainly talk about the data processing pipeline. The raw data is processed by ISSDAC and the result is a Level 1 data file. The Level 1 data files contain all the necessary information to make the final image (which is done by the Level 2 pipeline). The basic philosophy is this. We have a list of photons and the time and position of their detection. If we simply plot the positions of the photons we should get the image. There is a small problem though. The position of each photon is in detector coordinates and telescope moves during observation. If we can somehow correct for this movement (also called drift and jitter), we should get our image and that is pretty much the basic framework. the pipeline. Now that we have the big picture lets dive in deeper. 
 With the Level 1 product we get the following things 
 
-* The FUV and NUV data in folder uvtF and uvtN.a
+* The FUV and NUV data in folder uvtF and uvtN.
 * The VISible data in uvtV folder. 
 
 These pretty much contain all the data you will need to make a decent image. These are fed through Data Ingest that creates a list of photons for FUV and NUV along with their time and position of detection. For VIS it creates images.
@@ -25,7 +25,7 @@ However there are a bunch of factors that makes life more complicated
 
 # Results and Unresolved Issues
 With every known systematic taken into account we get spectacular images. 
-![NGC 2336]({{site.url}}{{site.baseurl}}/images/header_img.png)
+![NGC 2336](/images/header_img.png)
 *This is NGC 2336 in NUV. This was one of the very first observations of UVIT as extensively used for performance verification*
 
 The target angular resolution was 1.8" but analyzing a typical star shows angular resolution of about 1.3"-1.4". Each pixel is about 0.3". 
