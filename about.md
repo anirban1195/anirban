@@ -6,7 +6,7 @@ permalink: /about/
 
 Hi I am Anirban Dutta, currently a grad student at Purdue University. I am deeply involved with the [PhoSim](https://bitbucket.org/phosim/phosim_release/wiki/Home/) group. We also use WIYN 3.5m for Weak Lensing measurements. When I am not working, I like playing with interesting data and painting.
 
-I have previously worked on making a Level 2 pipeline for UVIT on board ASTROSAT which was India's frst space observatory. 
+I have previously worked on making a Level 2 pipeline for UVIT on board ASTROSAT which was India's first space observatory. 
 
 A part of our reasearch involves making cool images. Here are a few from WIYN
 
