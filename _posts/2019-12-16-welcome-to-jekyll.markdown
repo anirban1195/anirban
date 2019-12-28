@@ -33,6 +33,6 @@ The target angular resolution was 1.8" but analyzing a typical star shows angula
 
 The FUV images are not as spectacular as NUV since there are too few photons. One of the most mysterious things we encountered (and is still unexplained) is these crosshair patterns. 
 ![Crosshair]({{site.url}}{{site.baseurl}}/images/crosshair.png)
-It is a really subtle effect and without the correct color scheme in ds9 is is invisible to the naked eye. At first glance seems to be the a faint refection of some sort of mechanical support, but that is just a speculation. 
+It is a really subtle effect and without the correct color scheme in ds9 is is invisible to the naked eye. At first glance seems to be a faint refection of some sort of mechanical support, but that is just a speculation. 
 
 
