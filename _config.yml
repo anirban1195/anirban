@@ -17,8 +17,8 @@ title: Python Astronomy and More ...
 email: dutta26@purdue.edu
 description: > # this means to ignore newlines until "baseurl:"
   An archive of the interesting things I do 
-baseurl: # the subpath of your site, e.g. /blog
-url: http://https://github.com/anirban1195/anirban # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: /anirban # the subpath of your site, e.g. /blog
+url: http://https://github.com/anirban1195 # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  anirban1195
 
 # Build settings
