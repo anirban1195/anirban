@@ -25,7 +25,7 @@ However there are a bunch of factors that makes life more complicated
 
 # Results and Unresolved Issues
 With every known systematic taken into account we get spectacular images. 
-![NGC 2336](./images/header_img.png)
+![NGC 2336](/images/header_img.png)
 *This is NGC 2336 in NUV. This was one of the very first observations of UVIT as extensively used for performance verification*
 
 The target angular resolution was 1.8" but analyzing a typical star shows angular resolution of about 1.3"-1.4". Each pixel is about 0.3". 
