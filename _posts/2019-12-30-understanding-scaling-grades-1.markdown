@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Understanding Scaling at Purdue"
+title:  "Understanding Grage Scaling at Purdue"
 date:   2019-12-16 10:00:00 -0600
 categories: 10 Min Read
 ---
