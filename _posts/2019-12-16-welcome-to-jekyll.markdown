@@ -29,10 +29,10 @@ With every known systematic taken into account we get spectacular images.
 *This is NGC 2336 in NUV. This was one of the very first observations of UVIT as extensively used for performance verification*
 
 The target angular resolution was 1.8" but analyzing a typical star shows angular resolution of about 1.3"-1.4". Each pixel is about 0.3". 
-![A Typical Star](/images/typicalStar.png)
+![A Typical Star]({{site.url}}{{site.baseurl}}/images/typicalStar.png)
 
 The FUV images are not as spectacular as NUV since there are too few photons. One of the most mysterious things we encountered (and is still unexplained) is these crosshair patterns. 
-![Crosshair](/images/crosshair.png)
+![Crosshair]({{site.url}}{{site.baseurl}}/images/crosshair.png)
 It is a really subtle effect and without the correct color scheme in ds9 is is invisible to the naked eye. At first glance seems to be the a faint refection of some sort of mechanical support, but that is just a speculation. 
 
 
