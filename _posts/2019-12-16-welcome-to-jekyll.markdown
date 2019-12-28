@@ -13,15 +13,15 @@ With the Level 1 product we get the following things
 These pretty much contain all the data you will need to make a decent image. These are fed through Data Ingest that creates a list of photons for FUV and NUV along with their time and position of detection. For VIS it creates images.
 
 # Drift Series
-Drift Series is the the way the telescope moves during an observation. To find this we look at the VIS frames created by Data Ingest and identify the bright stars in each frame. We track these stars through the the entire observation to determine the drift series. VIS frames are approximately spaces 1s apart . It is important we keep track of the movememnt of these bright stars as a function of time (usually MJD as per the VIS clock) . Sometimes due to a variety of resons some data is missing and we have to skip frames. Skipping a few frames is fine, but if you skip too many frames then we have inaccurate frift series and hence bad angular resolution
+Drift Series is the way the telescope moves during an observation. To find this we look at the VIS frames created by Data Ingest and identify the bright stars in each frame. We track these stars through the entire observation to determine the drift series. VIS frames are approximately spaces 1s apart . It is important we keep track of the movement of these bright stars as a function of time (usually MJD as per the VIS clock) . Sometimes due to a variety of reasons some data is missing and we have to skip frames. Skipping a few frames is fine, but if you skip too many frames then we have inaccurate drift series and hence bad angular resolution
 
 # Making the Image
-Makint the image is the next step. For each photon detection, look at the time of detection and from the drift series find the drift vector form an arbitary fixed reference and move the photon position by this vector. Doing this for all photons and plotting the final postion give us the final image. 
+Making the image is the next step. For each photon detection, look at the time of detection and from the drift series find the drift vector form an arbitrary fixed reference and move the photon position by this vector. Doing this for all photons and plotting the final position give us the final image. 
 
 However there are a bunch of factors that makes life more complicated 
 
-* Presence of unexplained stripes in the the VIS images.
-* Different clocks of NUV , FUV and VIS. Sometimes ues to level 1 data processing the clocks are not completely synchronized.
+* Presence of unexplained stripes in the VIS images.
+* Different clocks of NUV , FUV and VIS. Sometimes the clocks are not completely synchronized.
 
 # Results and Unresolved Issues
 With every known systematic taken into account we get spectacular images. 
