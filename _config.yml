@@ -23,7 +23,7 @@ github_username:  anirban1195
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-slate
+theme: minima
 plugins:
   - jekyll-feed
 
