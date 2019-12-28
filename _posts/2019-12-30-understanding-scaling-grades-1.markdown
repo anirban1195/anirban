@@ -51,7 +51,7 @@ While this is somewhat good approximation, the original distribution has a much 
 Hmm... that does not look like a Gaussian at all. Maybe because the scores are already normalized we get such a skewed distribution. Lets then look at the raw totals from labs, recitation and exams. As usual first step is to read the data and normalize everthing to 1. 
 {% highlight python %}
 df = pd.read_csv('/home/anirban/Projects/gradebook/course2_fall.csv') 
-a = df['Weighted Total [Total Pts: up to 179.7 Percentage] |4388776']/100.0
+scaled_tot = df['Weighted Total [Total Pts: up to 179.7 Percentage] |4388776']/100.0
 labAvg = df['Total Lab [Total Pts: up to 130 Score] |4712224'].astype(float)/130.0
 recAvg = df['Total Rec [Total Pts: up to 130 Score] |4712221'].astype(float)/130.0
 lecAvg = df['Total Lec [Total Pts: up to 52 Score] |4712222'].astype(float)/52.0
@@ -65,7 +65,7 @@ Next we plot all the relevant histograms
 
 {% highlight python %}
 plt.subplot(221)
-n, bins, patches = plt.hist(a ,bins=100, facecolor='blue', alpha=0.5)
+n, bins, patches = plt.hist(scaled_tot ,bins=100, facecolor='blue', alpha=0.5)
 plt.xlabel('% Marks')
 plt.ylabel('# of students')
 plt.title('Normalized Total Score')
