@@ -106,7 +106,7 @@ Lastly I wanted to see if there was correlation between exam scores. Each of the
 
 This was a bit disappointing for me since the correlation is not very strong. But that is probably because the curves for the two subjective parts are significantly different. But on the bright side, the students performed clearly better in the second exam (since I remember both of the subjective parts being more or less of the same level)
 
-I would like to end this post on the note that in a world where curves look like this, what significance does B over A hold ? Does it really tell us what people think a B over A would tell you about the student ? Can we make these curves more non-skewed ? Yes simply by making the courses more difficult. But should we ? 
+I would like to end this post on the note that, in a world where curves look like this, what significance does grade B over A hold ? Does it really tell us what people think a B over A would tell you about the student ? Can we make these curves more non-skewed ? Yes, simply by making the courses more difficult. But should we ? 
 
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
