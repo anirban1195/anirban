@@ -23,7 +23,7 @@ plt.show()
 {% endhighlight %}
 
 These scores are already curved. This is what the histogram looks like. 
-![Normalized Score Histogram](/images/gradebook/norm_cum_sc.png)
+![Normalized Score Histogram]({{site.url}}{{site.baseurl}}/images/gradebook/norm_cum_sc.png)
 Hmm... that does not look like a Gaussian at all. Maybe, because the scores are already normalized, we get such a skewed distribution. Let's then look at the raw totals from labs, recitation and exams. 
 {% highlight python %}
 labAvg = df['LAB-Avg [Total Pts: up to 20 Percentage] |4332915'].astype(float)/100.0
@@ -40,10 +40,10 @@ plt.ylabel('# of students')
 plt.show()
 {% endhighlight %}
 We get 
-![Raw Score Histogram](/images/gradebook/cum_sc.png)
+![Raw Score Histogram]({{site.url}}{{site.baseurl}}/images/gradebook/cum_sc.png)
 That looks even more skewed. 
 However, this distribution should not come as a surprise. The labs and recitations gave almost full points to everyone just for showing up to class. Hence virtually everyone got 100% for those and maybe those two distributions are enough to skew the total grade distribution. So, my guess is that HWs and Exams should show a more Normal distribution. The plots we get are 
-![Exam and HW Histogram](/images/gradebook/exam_hw_raw.png)
+![Exam and HW Histogram]({{site.url}}{{site.baseurl}}/images/gradebook/exam_hw_raw.png)
 The exam distribution is kind of better. The HW curve looks almost like a flipped Poisson Distribution. If you don't know about [Poisson Distribution](https://en.wikipedia.org/wiki/Poisson_distribution) I would highly encourage you to read about it. I like to think of the flipped Poisson curve this way. Say we had a God who was handing out free answers. Everyone would want that. But sometimes other things can come in the way. Let's say the probability that a student gets answer for a particular HW problem wrong is about 2% or 0.02. So on average the students gets 98% problems correct. Only a few gets a significant number of problems wrong. 
 
 While this is somewhat good approximation, the original distribution has a much longer tail. Also, the details will depend on the scale of x-axis we use. So our model is not as good. At this point however I was curious to see if these skewed distributions are just peculiar to this course or a general characteristic. Fortunately, I have dataset for another course.
@@ -80,7 +80,7 @@ plt.ylabel('# of students')
 plt.title('Exam Total Score')
 {% endhighlight %}
 and here are the plots 
-![Course2 Histogram](/images/gradebook/course2_plots.png)
+![Course2 Histogram]({{site.url}}{{site.baseurl}}/images/gradebook/course2_plots.png)
 
 The spikes in the curves are due to binning and can be taken care of by larger bin size. Plots for this course less skewed probably because this is a higher-level course and is more difficult. The exam plots show some sort of normal distribution. Let's take a closer look. There were two exams and each exam had a subjective part and a multiple choice part. Plotting the two separately shows the starkest contrast.
 {% highlight python %}
@@ -97,7 +97,7 @@ plt.title('Subjective vs Multiple Choice Score')
 plt.show()
 {% endhighlight %}
 
-![Course 2 MC vs HG](/images/gradebook/course2_subjectiveVsMc.png)
+![Course 2 MC vs HG]({{site.url}}{{site.baseurl}}/images/gradebook/course2_subjectiveVsMc.png)
 
 The gaps in the Multiple Choice part is due to discreet possible grades. The hand graded portion looks much more similar to a normal distribution. The overall trend is still same, a slow rise and then quicker falloff.
 
@@ -115,7 +115,7 @@ plt.show()
 
 We get 
 
-![Course 2 HG vs HG](/images/gradebook/course2_subjectiveVssubjective.png)
+![Course 2 HG vs HG]({{site.url}}{{site.baseurl}}/images/gradebook/course2_subjectiveVssubjective.png)
 
 This was a bit disappointing since the correlation is not very strong. But that is probably because the curves for the two subjective parts are significantly different. But on the bright side, the students performed clearly better in the second exam (since I remember both the subjective exams being somewhat equally difficult). None of the courses showed strong correlation between exams. 
 
@@ -174,7 +174,7 @@ plt.legend(loc='upper right')
 {% endhighlight %}
 What we have done here is loop over some reasonable values of parameters k1 and k2 to find the most optimal distribution i.e. the one that gives the lowest value of chi-squared fit.
 
-![Poisson](/images/gradebook1/bad_poisson.png) 
+![Poisson]({{site.url}}{{site.baseurl}}/images/gradebook1/bad_poisson.png) 
 
 This was clearly a bad fit. The grade distribution curve has much longer tail. The idea of a long-tailed distribution arises in many areas of Physics, but the most prominent ones I would say are Maxwell's Distribution and Black Body Distribution. So, I decided giving them a shot. This is very similar to what we have done above. There are two changes that we need to make. First, replace guess with the new guess function and second, the range of reasonable parameters for k1 and k2 which is a bit of hit and trial. 
 
@@ -184,7 +184,7 @@ guess = k1* ((bins1[:]-bin_diff)**3)*(1/(np.exp(k2*(bins1[:]-bin_diff)) -1 ))   
 {% endhighlight %}
 The curves on the right are for best fit Black Body distribution and ones on right are for Maxwellian Distribution.
 
-![Course 1 BB vs MW](/images/gradebook1/course1_combined.png) 
+![Course 1 BB vs MW]({{site.url}}{{site.baseurl}}/images/gradebook1/course1_combined.png) 
 
 It is clear that the curves do not fit either of the two distribution well in all cases. However, it might still be the case the distributions would fit some other complex parametric distribution. The main issue here seems to be that at x=0, both our test curves go to zero, whereas the actual curve may or may not. We will not pursue this topic further. 
 
