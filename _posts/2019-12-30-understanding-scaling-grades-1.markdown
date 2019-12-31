@@ -6,7 +6,7 @@ categories: 10 Min Read
 ---
 Scaling/Normalizing grades has never been a very clear me. So this winter, I decided to take a look at the data from the courses I have been a TA for. Some people have the notion that the final grade distribution is roughly a [Normal](https://en.wikipedia.org/wiki/Normal_distribution) distribution, hence the name normalization or scaling and I was certainly one of them. At this point I should point out at Purdue, scaling and normalization are used interchangeably, but they are slightly different. Simplest way to explain this is to say normalization can change the shape of the curve but scaling merely changes the scales. So, when professors say scaling I believe they mean normalizing. However, I have found these two terms used so inter-changeably that it is best to decide the meaning depending on the context.
 
-## Vizualizing the Data
+## Visualizing the Data
 Let's look at the final grades for a course. I will use [panadas](https://pandas.pydata.org/) for data processing and [matplotlib](https://matplotlib.org) for visualization.
 {% highlight python %}
 import pandas as pd
