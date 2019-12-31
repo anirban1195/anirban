@@ -178,7 +178,7 @@ What we have done here is loop over some reasonable values of parameters k1 and 
 
 ![Poisson]({{site.url}}{{site.baseurl}}/images/gradebook1/bad_poisson.png) 
 
-This was clearly a bad fit. The grade distribution curve has much longer tail. The idea of a long-tailed distribution arises in many areas of Physics, but the most prominent ones I would say are Maxwell's Distribution and Black Body Distribution. So, I decided giving them a shot. This is very similar to what we have done above. There are two changes that we need to make. First, replace guess with the new guess function and second, the range of reasonable parameters for k1 and k2 which is a bit of hit and trial. 
+This was clearly a bad fit. The grade distribution curve has much longer tail. The idea of a long-tailed distribution arises in many areas of Physics, but the most prominent ones I would say are [Maxwell's Distribution](https://en.wikipedia.org/wiki/Maxwell%E2%80%93Boltzmann_distribution) and [Black Body Distribution](https://en.wikipedia.org/wiki/Black-body_radiation). So, I decided giving them a shot. This is very similar to what we have done above. There are two changes that we need to make. First, replace guess with the new guess function and second, the range of reasonable parameters for k1 and k2 which is a bit of hit and trial. 
 
 {% highlight python %}
 guess = k1*((bins1[:]-bin_diff)**2)* np.exp(-k2*((bins1[:]-bin_diff)**2)) 	#For Maxwellian Distribution
