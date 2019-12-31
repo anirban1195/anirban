@@ -196,7 +196,7 @@ So what did we learn ?
 
 * The more difficult a course gets, the more "normalized" curves get. Again, take this with a bit of salt for the same reason.
 
-* Also, correlation between exams are low which is great news because if you did bad in one exam, there is a good chance you could do significantly better in the next one. So don't get your hopes down and get ready to Boiler Up and Hammer Down !! 
+* Correlation between exams are low which is great news because if you did bad in one exam, there is a good chance you could do significantly better in the next one. So don't get your hopes down and get ready to Boiler Up and Hammer Down !! 
 
 Thanks for reading
 
