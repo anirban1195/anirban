@@ -146,7 +146,7 @@ exam1 = df['Exam1 [Total Pts: 200 Score] |4094707'].astype(float)/2.0
 exam1 = 100+(exam1*-1)
 {% endhighlight %}
 
-To best find best fit we will use Chi-Squared statistics. It's okay if you don't know the details but basically it gives a number which tells us how good our fit is. Smaller the number better the fit. Fortunately, scipy provides a pre-built package [chisquare](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chisquare.html). 
+To find best fit we will use Chi-Squared statistics. It's okay if you don't know the details but basically it gives a number which tells us how good our fit is. Smaller the number better the fit. Fortunately, scipy provides a pre-built package [chisquare](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chisquare.html). 
  
 {% highlight python %}
 from scipy.stats import chisquare
