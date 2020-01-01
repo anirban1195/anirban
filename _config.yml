@@ -16,9 +16,7 @@
 title: Python Astronomy and More ...
 email: dutta26@purdue.edu
 description: > # this means to ignore newlines until "baseurl:"
-  Anirban Dutta
-  Dept of Physics and Astronomy
-  Purdue University
+  An archive of random stuff
 baseurl: /anirban # the subpath of your site, e.g. /blog
 url: https://anirban1195.github.io # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  anirban1195
