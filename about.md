@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hi I am Anirban Dutta, currently a grad student at Purdue University. I am deeply involved with the [PhoSim](https://bitbucket.org/phosim/phosim_release/wiki/Home/) group and work with Prof. [J.R.Peterson ](https://www.physics.purdue.edu/people/faculty/peterson.php). We also use WIYN 3.5m for Weak Lensing measurements. When I am not working, I like playing with interesting data and painting.
+Hi I am Anirban Dutta, currently a grad student at Purdue University. I am involved with the [PhoSim](https://bitbucket.org/phosim/phosim_release/wiki/Home/) group and work with Prof. [J.R.Peterson ](https://www.physics.purdue.edu/people/faculty/peterson.php). We also use WIYN 3.5m for Weak Lensing measurements. When I am not working, I like playing with interesting data and painting.
 
 I have previously worked on making a Level 2 pipeline for UVIT on board ASTROSAT which was India's first space observatory. I worked at NCRA with Prof. [Swarna K Ghosh](https://www.tifr.res.in/~swarna/)
 
