@@ -54,14 +54,14 @@ We see it is a 320x320x320 array.Each edge of the data cube corresponds to 7Mpc.
 {% highlight python %}
 n, bins, patches = plt.hist(x=data.flatten(), bins=100, alpha=0.7, rwidth=0.85) 
 {% endhighlight %}
-![Histogram 1](/images/vtkImg/hist_0.png)
+![Histogram 1]({{site.url}}{{site.baseurl}}/images/vtkImg/hist_0.png)
 
 Clearly most of the data is in the first bin. Let's clip the data up to the first bin(about 100) and plot again.
 
 {% highlight python %}
 n, bins, patches = plt.hist(x=data[data<100].flatten(), bins=100, alpha=0.7, rwidth=0.85) 
 {% endhighlight %}
-![Histogram 2](/images/vtkImg/hist_1.png)
+![Histogram 2]({{site.url}}{{site.baseurl}}/images/vtkImg/hist_1.png)
 
 
 We again end up with a similar looking histogram. If we continue this pattern, we find most of the values are close to zero. Let us also find the maximum and minimum values of the array.
@@ -154,7 +154,7 @@ opacityTransferFunction.AddPoint(4.86 ,0.0)
 {% endhighlight %}
 
 The opacity and color transfer function together is called transfer function. We represent it as shown below. On y axis you see opacity and on x axis we have the values. We get the color at each point from the color transfer function.
-![Transfer Function](/images/vtkImg/dark_matter_tf.png)
+![Transfer Function]({{site.url}}{{site.baseurl}}/images/vtkImg/dark_matter_tf.png)
 
 ## Volume Actor and Mapper
 
@@ -209,7 +209,7 @@ iren.Start()
 {% endhighlight %}
 
 That’s it. We are done. Run the code and you should see something like this. 
-![3-D Output](/images/vtkImg/Dark_matter_density.png)
+![3-D Output]({{site.url}}{{site.baseurl}}/images/vtkImg/Dark_matter_density.png)
 <iframe width="740" height="360" src="https://www.youtube.com/embed/LcYGXKOZiQU" frameborder="0"> </iframe>
 
 
