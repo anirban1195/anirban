@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Visualizing the Universe with VTK(Part 2)"
-date:   2020-08-11 20:00:00 -0600
+date:   2020-05-10 10:00:00 -0600
 categories: 10 Min Read
 ---
 Last time we saw how volume render of dark matter. Using the exact same set of codes, we can do volume rendering of all the other quantities that are present in the data like Temperature or magnitude Magnetic Field. This time lets try and visualize vectors. The codes can be found [here](https://github.com/anirban1195/vtk/blob/master/create_Bfield_data.py) and [here](https://github.com/anirban1195/vtk/blob/master/bField_rendering.py)
