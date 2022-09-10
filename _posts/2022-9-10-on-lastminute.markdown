@@ -12,7 +12,7 @@ Here is an example for the course I am a TA for . I plot the histogram of how ma
 
 The graph clearly shows as the deadline approaches, more students start turning in their work. I do not have as much data as I would have liked but the trend is very clear. Take this graph with a pinch of salt since it could the be the case that the students completed the assignment much before they submitted . And if we plotted histogram of how many students completed the assignment at a specific time interval it will be roughly uniform. But such data will be hard to obtain. My point is these graphs bring out an interesting aspect of human nature, i.e the last minute hurry. As an aside if you look carefully at the above graph you  should be able to see some modulation i.e a high bar followed by a low bar. This is no accident since there is virtually no student submitting assignments from 12 midnight to 8AM . 
 
-A similar pattern can be found not just for college going kids but for grown ups as well. Here is a same kind of [graph](https://arxiv.org/pdf/1202.5254.pdf) for an online competition held by the weak lensing community 
+A similar pattern can be found not just for college going kids, but for grown ups as well. Here is a same kind of [graph](https://arxiv.org/pdf/1202.5254.pdf) for an online competition held by the weak lensing community 
 ![Taken from "Image Analysis for Cosmology:Results from the GREAT10 Galaxy Challenge" by Kitching et al]({{site.url}}{{site.baseurl}}/images/last_minute_imgs/great_challenge.png)
 
 This pattern extends to other cases as well. Consider the colloquium I have to attend every Thursday. I recorded the number of people entering the room at any moment . The black line in the graph shows the colloquium starts at 3:30pm. 
@@ -23,7 +23,7 @@ Another example can be found in the exams of the course I TA. I once again recor
 
 ![Histogram of when students turn in their exam]({{site.url}}{{site.baseurl}}/images/last_minute_imgs/exams.png)
 
-By now it should be clear that this pattern is very common, at least in academic circles. But from what I have seen, this seems to be somewhat common outside academic circles as well. I am not sure if this fully qualifies as procrastination, but I am willing to believe a part of it is. You don’t hear that term thrown around when it comes to turning in exams or attending colloquiums. It almost seems like there is an asymptotic sense on urgency hard wired in our brains that reaches infinity close to the deadline
+By now it should be clear that this pattern is very common, at least in academic circles. But from what I have seen, this seems to be somewhat common outside academic circles as well. I am not sure if this fully qualifies as procrastination, but I am willing to believe a part of it is. You don’t hear that term thrown around when it comes to turning in exams or attending colloquiums. It almost seems like there is an asymptotic sense of urgency hard wired in our brains that reaches infinity close to the deadline
 
 
 
