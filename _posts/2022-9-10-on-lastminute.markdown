@@ -14,11 +14,11 @@ The graph clearly shows as the deadline approaches, more students start turning 
 A similar pattern can be found not just for college going kids but for grown ups as well. Here is a same kind of [graph](https://arxiv.org/pdf/1202.5254.pdf) for an online competition held by the weak lensing community 
 ![Taken from "Image Analysis for Cosmology:Results from the GREAT10 Galaxy Challenge" by Kitching et al]({{site.url}}{{site.baseurl}}/images/last_minute_imgs/great_challenge.png)
 
-This pattern extends to other cases as well. Consider the colloquium I have to attend every Thursday. I recorded the number of people entering the room at any moment . The black line in the graph shows the colloquium starts at 3:30 . 
+This pattern extends to other cases as well. Consider the colloquium I have to attend every Thursday. I recorded the number of people entering the room at any moment . The black line in the graph shows the colloquium starts at 3:30pm. 
 ![Histogram of when people enter the room to attend colloquium]({{site.url}}{{site.baseurl}}/images/last_minute_imgs/coll24Mar22.png)
 
 
-Another example can be found in the exams of the course I TA. I once again record the number of students submitting the exam at any given time and plot a similar graph. A similar pattern can be seen . 
+Another example can be found in the exams of the course I TA. I once again record the number of students submitting the exam at any given time and plot a similar graph. A similar pattern can be seen. The black line once again denotes end of the exam 
 
 ![Histogram of when students turn in their exam]({{site.url}}{{site.baseurl}}/images/last_minute_imgs/exams.png)
 
