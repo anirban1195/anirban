@@ -31,6 +31,7 @@ ax = temp_age1stcode.plot.hist(column=['Age1stCode'],  histtype='step', bins=20,
 ax.set_xlabel('Age 1st Code')
 {% endhighlight %}
 ![Age of First Code Histogram]({{site.url}}{{site.baseurl}}/images/stackover_images/age_hist.png)
+
 Interesting. Looks like most people wrote their first code at around 15 yrs of age. This is approximately true for me as well. Let's also look how long people have been coding for professionally. 
 
 {% highlight python %}
@@ -42,6 +43,7 @@ ax = temp_yrscodepro.plot.hist(column=['YearsCodePro'],  histtype='step', bins=2
 ax.set_xlabel('Yrs coding professionally')
 {% endhighlight %}
 ![Age Coding Professionally]({{site.url}}{{site.baseurl}}/images/stackover_images/yrs_coding_pro.png)
+
 Most of the respondents seem have been coding professionally for less than 10 yrs. So probably a relatively young group of people responded to the survey I assume. 
 Interesting. Now lets look  at social media and age. Also lets try a different kind of plot, violin plot.
 
@@ -64,6 +66,7 @@ plt.xticks(code+1, list_uniques)
 plt.ylabel('Age')
 {% endhighlight %}
 ![Violin Plot of age distribution according to social media usage]({{site.url}}{{site.baseurl}}/images/stackover_images/age_socialMedia_violin.png)
+
 Looks like Twitter, LinkedIn and Not Using Social Media have a fatter tail i.e greater percentage of older people. Thats not super surprising. Lets look at dependents. There are only 2 unique values. Lets encode them as 1’s for having dependent and 0 for no dependent. 
 {% highlight python %}
 #Process dependents 
@@ -77,6 +80,7 @@ plt.ylabel('Frequency')
 plt.legend()
 {% endhighlight %}
 ![Histogram of Age for people with and without dependents ]({{site.url}}{{site.baseurl}}/images/stackover_images/dependents_age_hist.png)
+
 Clearly people with dependents have been coding professionally for longer. No surprises there. Lets now look at the degrees people have compared to age. we will create two bins, one younger for people age 30 and under. All people above 30 will be called older. I select 30 because by this age most people have achieved Masters of PhD if they were planning to do so. Or at least so I think. 
 
 {% highlight python %}
@@ -100,6 +104,7 @@ plt.ylabel('Frequency')
 plt.legend()
 {% endhighlight %}
 ![Histogram of Degrees acording to age ]({{site.url}}{{site.baseurl}}/images/stackover_images/age_vs_degree.png)
+
 Its hard to understand what the x axis means. The best thing to do would be to rename things and re-plot. For exploratory purposes we can just look at the variable "dictionary_edlevel". The highest bar is for bachelors degree(bar at 2.5), second highest is the masters degree(bar at 4.5). The bar to the right of Masters is PhD(bar at 5.5).
 Fraction of people with PhD under 30 is surprisingly low. For Masters its about 50-50. 
 Now finally the question you have been waiting for. Does these massive FAANG companies care about Degrees. Lets look at the organization size unique values 
@@ -120,6 +125,7 @@ plt.ylabel('Frequency')
 plt.legend()
 {% endhighlight %}
 ![Histogram of Degrees acording to Organization size ]({{site.url}}{{site.baseurl}}/images/stackover_images/orgSize_vs_degree.png)
+
 Clearly as the organization size increases, the prefence towards a formal degree in decreases. Do not let anyone tell you otherwise. 
 
 
