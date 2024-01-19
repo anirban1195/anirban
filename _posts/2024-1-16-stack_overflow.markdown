@@ -126,7 +126,7 @@ plt.legend()
 {% endhighlight %}
 ![Histogram of Degrees acording to Organization size ]({{site.url}}{{site.baseurl}}/images/stackover_images/orgSize_vs_degree.png)
 
-Clearly as the organization size increases, the prefence towards a formal degree in decreases. Do not let anyone tell you otherwise. 
+Clearly as the organization size increases, the prefence towards a formal degree inncreases. Look at the bars at 2.3 for bachelors, 4.5 for masters and 5.5 for PhD's. Do not let anyone tell you otherwise. 
 
 
 
