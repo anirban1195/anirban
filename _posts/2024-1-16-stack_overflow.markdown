@@ -118,9 +118,9 @@ We look at 3 different classes.
 loc0 = np.where(temp_orgsize == 2)[0]
 loc1 = np.where(temp_orgsize == 4)[0]
 loc2 = np.where(temp_orgsize == 1)[0]
-plt.hist(temp_edlevel.iloc[loc0], bins= 10, histtype='step', density=True, label = '10k employees')
-plt.hist(temp_edlevel.iloc[loc2], bins= 10, histtype='step', density=True, label = '500 employees')
-plt.hist(temp_edlevel.iloc[loc1], bins= 10, histtype='step', density=True, label = '20 employees')
+plt.hist(temp_edlevel.iloc[loc0], bins= np.arange(-0.5, 10.5, 1), histtype='step', density=True, label = '10k employees')
+plt.hist(temp_edlevel.iloc[loc2], bins= np.arange(-0.5, 10.5, 1), histtype='step', density=True, label = '500 employees')
+plt.hist(temp_edlevel.iloc[loc1], bins= np.arange(-0.5, 10.5, 1), histtype='step', density=True, label = '20 employees')
 plt.ylabel('Frequency')
 plt.legend()
 {% endhighlight %}
