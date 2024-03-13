@@ -124,9 +124,9 @@ plt.hist(temp_edlevel.iloc[loc1], bins= np.arange(-0.5, 10.5, 1), histtype='step
 plt.ylabel('Frequency')
 plt.legend()
 {% endhighlight %}
-![Histogram of Degrees acording to Organization size ]({{site.url}}{{site.baseurl}}/images/stackover_images/orgSize_vs_degree.png)
+![Histogram of Degrees acording to Organization size ]({{site.url}}{{site.baseurl}}/images/stackover_images/orgSize_vs_degree_1.png)
 
-Clearly as the organization size increases, the prefence towards a formal degree inncreases. Look at the bars at 2.3 for bachelors, 4.5 for masters and 5.5 for PhD's. Do not let anyone tell you otherwise. 
+Clearly as the organization size increases, the prefence towards a formal degree inncreases. Look at the bars at 2 (for bachelors), 4 (for masters) and 5 (for PhD's). Do not let anyone tell you otherwise. 
 
 
 
