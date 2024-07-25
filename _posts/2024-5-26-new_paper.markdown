@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Forced Measurement and Uncertaity of Faint Astronomical Sources"
+title:  "Forced Measurement and Uncertainty of Faint Astronomical Sources"
 date:   2024-5-26 10:00:00 -0600
 categories: 10 Min Read
 ---
