@@ -4,28 +4,21 @@ title: About
 permalink: /about/
 ---
 
-Hi I am Anirban Dutta, currently a grad student at Purdue University. I am involved with the [PhoSim](https://bitbucket.org/phosim/phosim_release/wiki/Home/) group and work with Prof. [J.R.Peterson ](https://www.physics.purdue.edu/people/faculty/peterson.php). We also use WIYN 3.5m for Weak Lensing measurements. When I am not working, I like playing with interesting data and paint.
+I am a recent PhD graduate from Purdue University. My research focuses on galaxy clusters, large-scale structures, and their study using multi-wavelength analysis. More recently, I have begun applying machine learning (ML) methods to these topics. 
 
-I have previously worked at NCRA with Prof. [Swarna K Ghosh](https://www.tifr.res.in/~swarna/) to make a software pipeline for UVIT on board ASTROSAT which was India's first space observatory.
+When I'm not doing research, I enjoy playing with interesting data, painting, and tennis.
 
-A part of our reasearch involves making cool images. Here are a few from WIYN
-
-![Abell 2390]({{site.url}}{{site.baseurl}}/images/about_images/2390_standard.jpeg)
-*Galaxy Cluster Abell 2390*
+A part of our research involves making cool images. Here are a few from the WIYN telescope and the UVIT instrument:
 
 
-![Abell 2390 vs Hubble]({{site.url}}{{site.baseurl}}/images/about_images/2390_hubble_comparison.jpg)
-*Hubble Image(Left) of Abell 2390 vs our Image.Of course Hubble wins, as one of my colleague said, but or image has a much larger field(not shown here)*
+![Abell 2390]({{site.url}}{{site.baseurl}}/images/about_images/a2390_center.png)
+*The galaxy cluster Abell 2390. This deep image from WIYN reaches a limiting magnitude of r ~ 27.*
 
-
-![Abell 115]({{site.url}}{{site.baseurl}}/images/about_images/115_cluster_superZoom1.jpeg)
-*Galaxy Cluster Abell 115*
-
+![Abell 2390_wide]({{site.url}}{{site.baseurl}}/images/about_images/a2390_wide.png)
+*The wide filed containing Abell 2390*
 
 ![NGC 2336]({{site.url}}{{site.baseurl}}/images/header_img.png)
-*Galaxy NGC 2336 using UVIT. This was UVIT's one of the very first image used for performace verification. Some familiar readers might remember it was dataset 1191*
-
-
+*The galaxy NGC 2336, viewed by the UVIT instrument. This was one of the very first images used for its performance verification. (Familiar readers might remember it as dataset 1191!)*
 
 
 You can find my codes at
